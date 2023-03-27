@@ -1,5 +1,9 @@
 FROM python:3.7.8-slim
 
+RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
+RUN apt-get -y install curl
+RUN apt-get install libgomp1
+
 # remember to expose the port your app'll be exposed on.
 EXPOSE 8080
 

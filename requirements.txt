@@ -1,2 +1,6 @@
 pandas
 streamlit
+lightgbm
+plotly
+numpy
+shap
