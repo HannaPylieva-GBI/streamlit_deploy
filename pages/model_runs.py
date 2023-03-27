@@ -27,4 +27,4 @@ inputs = [st.slider(c, min_value=float(df[c].min()), max_value=float(df[c].max()
                 step=0.01) for c in numeric_columns]
 
 st.write(inputs)
-model.predict(inputs)
+model.predict([inputs])
