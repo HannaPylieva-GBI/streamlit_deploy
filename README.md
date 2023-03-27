@@ -1,6 +1,5 @@
-# streamlit_deploy
-This is a basic project template for building and deploying containerized [streamlit](https://docs.streamlit.io/en/stable/index.html) apps.
-
-If you're using this for your own project/s, head to the [Getting Started guide](docs/template-info.md).
-
-This app is configured to be deployed with Google Cloud Platform's [App Engine](https://cloud.google.com/appengine).
+# UI for perusasion project
+To run locally in docker, runt he following command:
+```
+docker run  --mount src=`pwd`,target=/local_data,type=bind -p 5050:8080 streamlit_app
+```
